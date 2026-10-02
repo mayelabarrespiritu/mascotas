@@ -1,0 +1,42 @@
+#info {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 35px 0 45px;
+}
+
+#info > h3 {
+    width: min(92%, 800px);
+    margin: 0 auto 25px;
+    font-size: clamp(1.15rem, 3vw, 1.7rem);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 15px;
+    justify-items: center;
+}
+
+.info-pet {
+    width: 100%;
+}
+
+.info-pet img {
+    width: min(180px, 80vw);
+    height: min(180px, 80vw);
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    margin: 0 auto 10px;
+}
+
+.info-pet h4 {
+    font-size: 1.1rem;
+}
+
+@media (min-width: 700px) {
+    .info-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
